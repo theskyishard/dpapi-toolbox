@@ -11,3 +11,8 @@
 # Build output
 [Bb]in/
 [Oo]bj/
+
+# Ignore appsettings file, this will usually have application-specific info that we do not want in DVCS
+# This in conjunction with 'git update-index --assume-unchanged -- dpapi-toolbox/appsettings.json'
+# Ensures that further edits to this file are not tracked.
+dpapi-toolbox/appsettings.json
